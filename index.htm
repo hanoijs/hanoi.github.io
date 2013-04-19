@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hanoi JS - Cộng đồng đam mê Java Script</title>
+		<!-- Bootstrap -->
+		<link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="stylesheets/hanoijs.css" rel="stylesheet" media="screen">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="javascripts/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="row">
+  			<nav class="navbar navbar-fixed-top span3 left">
+				<div class="navbar-inner intro">
+					<div class="logo">@hanoijs</div>
+                    <div class="subtitle">Cộng Đồng Đam Mê JavaScript</div>
+					<div class="channel">Kênh</div>
+                    <div style="width: 100%; margin: 0 auto; position: center bottom; bottom: 0px;">
+                        <div class="subtitle" style="font-size: 12px;">Theo Kênh Này</div>
+                        <img src="images/twitter-icon.png" style="margin: 0px; width: 24%; height: 55px; ">
+
+                        <img src="images/rss-icon.png" style="margin: 0px; width: 24%; height: 55px;">
+                        <img src="images/facebook-icon.png" style="margin: 0px; width: 24%; height: 55px;">
+                        <img class="bg-color-pinkDark" src="../img/github.png" style="width: 24%; height: 55px; margin: 0px auto; display:inline;">
+
+                        <!-- <div class="subtitle" style="font-size: 12px;">Github</div> -->
+
+                    </div>
+				      </div>
+			 </nav>
+
+<!-- The end of the level 1 right site bar -->
+
+
+
+			<!--
+  			<div class="span offset3 header-up" style="/**background-color: #f7f7f9;*/">
+  				<div class="span8"></div>  				
+  			</div>
+			-->
+  			<div class="span6 center-content events" style="position: relative;">
+  				<div class="title title-event ">
+  					<!--  					
+  					<img class="bg-color-pinkDark" src="../img/simple.png" style="width: 32px; height: 32px;">
+  					-->
+  					<h2 class="text">Các Sự Kiện</h2>
+  				</div>
+  				<div class="events-list">
+  			
+  					<div class="event" data="event01" style="margin-top: 5px; color: #0088cc;background-color:transparent;">
+  						<div class="date" style="color: #0088cc;">3/21/2013</div>
+  						<div class="title" style="color: #0088cc;">
+  							<h2>  [p2]</h2>	
+  						</div>
+  						<div class="img" style="margin-top: 3px;">
+  							<b style="color: #0088cc;">speaker</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg" style="width: 48px; height: 48px;float: right;margin-right: 3px;">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg" style="width: 48px; height: 48px;float: right;">
+  						</div>
+  						<div class="right" style="color: #0088cc; clear: both;text-align: right;">
+  							Troy Hoang, Tom Dale
+  						</div>
+  					</div>
+					
+          <!-- Talk 1 -->         
+  					<div class="event blue white-font" data="event01">
+  						<div class="date">4/18/2013</div>
+  						<h2> 1st talk with Tom Dale on JavaScript[p2]</h2>
+  						<div class="img">
+  							<b>Người tham gia trò chuyện.</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  						</div>
+  						<div class="right">
+  							Hoang Do aka Troy, John-David Dalton, Claire Hill
+  						</div>
+  					</div>
+          <!-- The end of talk 1 -->
+    <!--
+  
+            <div class="event green white-font">
+  						<div class="date">3/21/2013</div>
+  						<h2> oop in javascript [p2]</h2>
+  						<div class="img">
+  							<b>speaker</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  						</div>
+  						<div class="right">
+  							Troy Hoang, Tom Dale
+  						</div>
+  					</div>
+   
+  					<div class="event orange white-font">
+  						<div class="date">3/21/2013</div>
+ 						<h2> oop in javascript [p2]</h2>
+  						<div class="img">
+  							<b>speaker</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  						</div>
+  						<div class="right">
+  							Troy Hoang, Tom Dale
+  						</div>
+  					</div>
+
+  					<div class="event yellow white-font">
+  						<div class="date">3/21/2013</div>
+  						<h2> oop in javascript [p2]</h2>
+  						<div class="img">
+  							<b>speaker</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  						</div>
+  						<div class="right">
+  							Troy Hoang, Tom Dale
+  						</div>
+  					</div>
+
+  					<div class="event grey black-font">
+  						<div class="date">3/17/2013</div>
+  						<h2> oop in javascript </h2>
+  						<div class="img">
+  							<b>speaker</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  						</div>
+  						<div class="right">  							
+  							Troy Hoang, Tom Dale
+  						</div>
+  					</div>
+          			<div class="event gray black-font">
+  						<div class="date">3/17/2013</div>
+  						<h2> oop in javascript </h2>
+  						<div class="img">
+  							<b>speaker</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  						</div>
+  						<div class="right">  							
+  							Troy Hoang, Tom Dale
+  						</div>
+  					</div>
+  					<div class="event red black-font">
+  						<div class="date">3/17/2013</div>
+  						<h2> oop in javascript </h2>
+  						<div class="img">
+  							<b>speaker</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  						</div>
+  						<div class="right">  							
+  							Troy Hoang, Tom Dale
+  						</div>
+  					</div>
+  					<div class="event black-font">
+  						<div class="date">3/17/2013</div>
+  						<h2> oop in javascript </h2>
+  						<div class="img">
+  							<b>speaker</b>
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  							<img src="http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg">
+  						</div>
+  						<div class="right">  							
+  							Troy Hoang, Tom Dale
+  						</div>
+  					</div>
+  -->
+<!-- The end of postcast list -->
+
+  				</div>
+  			</div>
+  			<div class="span8 center-content detail">
+  				<div class="title">
+  					<!--						
+  					<img class="bg-color-pinkDark" src="../img/github.png" style="width: 32px; height: 32px;">
+  					-->
+  					<h2 class="text">Nội Dung</h2>
+  				</div>
+  				
+  				<div class="entry-content" style="height: 100%;">
+  					<h3>Tải Về</h3>
+  					<div class="downloads">
+  						<!--					
+  						<audio class="podcastplayer" controls="">
+  							<source src="http://www.podtrac.com/pts/redirect.mp3/www.archive.org/download/NodeUp41/NodeUp41.mp3" type="audio/mp3" preload="none">     
+  							<source src="http://www.podtrac.com/pts/redirect.ogg/www.archive.org/download/NodeUp41/NodeUp41.ogg" type="audio/ogg" preload="none">
+  						</audio
+  						-->
+  					</div>
+  					
+  					<h3>Tài liệu liên quan. </h3>
+  					<div>  						
+  						<ul class="reference-store">
+  							
+  						</ul>
+  					</div>
+  				</div>
+  				
+  			</div>
+		</div>
+		
+
+
+
+
+
+	<script>
+	$(document).ready(function(){
+		var data = {
+			incoming:{
+				date: "5/04/2013",
+				title: "emberjs",
+				speaker:[
+					{
+						name: "Tome Dale",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					},
+					{
+						name: "Troy Hoang",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					}
+				],
+				audio:'<audio class="podcastplayer" controls=""><source src="http://www.podtrac.com/pts/redirect.mp3/www.archive.org/download/NodeUp41/NodeUp41.mp3" type="audio/mp3" preload="none"><source src="http://www.podtrac.com/pts/redirect.ogg/www.archive.org/download/NodeUp41/NodeUp41.ogg" type="audio/ogg" preload="none"></audio>',
+				reference: [
+					{
+						link: "https://code.google.com/p/leveldb/",
+						name: "leveldb"
+					}
+				],
+				style: "black-font" // green, orange, yellow, gray
+			},
+			event01:{
+				date: "5/01/2013",
+				title: "oop in javascript {ep01}",
+				speaker:[
+					{
+						name: "Tome Dale",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					},
+					{
+						name: "Troy Hoang",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					}
+				],
+				audio:'<audio class="podcastplayer" controls=""><source src="http://www.podtrac.com/pts/redirect.mp3/www.archive.org/download/NodeUp41/NodeUp41.mp3" type="audio/mp3" preload="none"><source src="http://www.podtrac.com/pts/redirect.ogg/www.archive.org/download/NodeUp41/NodeUp41.ogg" type="audio/ogg" preload="none"></audio>',
+				reference: [
+					{
+						link: "https://code.google.com/p/leveldb/",
+						name: "leveldb"
+					},
+					{
+						link: "#goto",
+						name: "google"
+					}
+				],
+				style: "blue" // green, orange, yellow, gray
+			},
+			event02:{
+				date: "5/01/2013",
+				title: "oop in javascript {ep01}",
+				speaker:[
+					{
+						name: "Tome Dale",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					},
+					{
+						name: "Troy Hoang",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					}
+				],
+				audio:'<audio class="podcastplayer" controls=""><source src="http://www.podtrac.com/pts/redirect.mp3/www.archive.org/download/NodeUp41/NodeUp41.mp3" type="audio/mp3" preload="none"><source src="http://www.podtrac.com/pts/redirect.ogg/www.archive.org/download/NodeUp41/NodeUp41.ogg" type="audio/ogg" preload="none"></audio>',
+				reference: [
+					{
+						link: "https://code.google.com/p/leveldb/",
+						name: "leveldb"
+					},
+					{
+						link: "#goto",
+						name: "wiki"
+					}
+				],
+				style: "green" // green, orange, yellow, gray
+			},
+			event03:{
+				date: "5/01/2013",
+				title: "oop in javascript {ep01}",
+				speaker:[
+					{
+						name: "Tome Dale",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					},
+					{
+						name: "Troy Hoang",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					}
+				],
+				audio:'<audio class="podcastplayer" controls=""><source src="http://www.podtrac.com/pts/redirect.mp3/www.archive.org/download/NodeUp41/NodeUp41.mp3" type="audio/mp3" preload="none"><source src="http://www.podtrac.com/pts/redirect.ogg/www.archive.org/download/NodeUp41/NodeUp41.ogg" type="audio/ogg" preload="none"></audio>',
+				reference: [
+					{
+						link: "https://code.google.com/p/leveldb/",
+						name: "leveldb"
+					},
+					{
+						link: "#goto",
+						name: "tom dale"
+					}
+				],
+				style: "orange" // green, orange, yellow, gray
+			},
+			event04:{
+				date: "5/01/2013",
+				title: "oop in javascript {ep01}",
+				speaker:[
+					{
+						name: "Tome Dale",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					},
+					{
+						name: "Troy Hoang",
+						avatar: "http://a0.twimg.com/profile_images/29647142/hsm2_normal.jpg",
+						link: ""
+					}
+				],
+				audio:'<audio class="podcastplayer" controls=""><source src="http://www.podtrac.com/pts/redirect.mp3/www.archive.org/download/NodeUp41/NodeUp41.mp3" type="audio/mp3" preload="none"><source src="http://www.podtrac.com/pts/redirect.ogg/www.archive.org/download/NodeUp41/NodeUp41.ogg" type="audio/ogg" preload="none"></audio>',
+				reference: [
+					{
+						link: "https://code.google.com/p/leveldb/",
+						name: "leveldb"
+					},
+					{
+						link: "#goto",
+						name: "tom dale"
+					}
+				],
+				style: "yellow" // green, orange, yellow, gray
+			},
+		}
+		$('div.events-list').on({click: function(){
+			var d = data[$(this).attr('data')], i, len, htmlReference = "";
+			len = d.reference.length;
+			for(i=0;i<len;i++){
+				htmlReference += '<li><a class="notelink" href="'+ d.reference[i].link +'" target="_blank">'+ d.reference[i].name +'</a></li>';
+			};
+			$('div.downloads').html(d.audio);
+			$('.reference-store').html(htmlReference);
+		}}, 'div.event');
+
+        function renderEvents(){
+            var htmlEvents = "", img = "", name = "", i, len;
+            $.each( data, function( i, item ) {
+            	img = ""; name = "";
+
+                htmlEvents += '<div class="event '+ item.style +' white-font" data="'+ i +'"><div class="date">'+ item.date +'</div><h2>'+ item.title +'</h2><div class="img"><b>speaker</b>';
+
+                len = item.speaker.length;
+                for(i = 0; i < len; i++){                	
+                	img += '<img src="'+item.speaker[i].avatar+'">';
+                	name+= "[" + item.speaker[i].name + "] ";
+                }
+                htmlEvents += img + '</div><div class="right">'+ name +'</div></div>';
+                
+            });
+            $('div.events-list').html(htmlEvents);
+        }
+        renderEvents();
+	});
+	</script>
+	</body>
+</html>
